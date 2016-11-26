@@ -99,35 +99,73 @@ transition: all 0.3s ease-in-out;
 }
 
 .top-nav ul li ul {
-    /*display: none;*/
-    background: rgba(1, 140, 8, 0.6); 
+    display: none;
+    background: rgba(1, 140, 8, 1); 
     position: absolute;
     box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
     top: 100%;
     left: 0;
     padding: 0;
     min-width: 200px;
+
+    -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
 }
 .top-nav ul li ul li ul {
     position: absolute;
     top: 0;
     left: 100%;
-    width: auto;
+    width: 240px;
 }
 .top-nav ul li:hover > ul {
     display: block;
+
+    -webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
 }
 .top-nav ul li ul li {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #076b00;
     float: none;
     display: block;
-}
+} 
 .top-nav ul li ul li a {
     display: block;
-    padding: 10px 20px!important;
+    padding: 6px 20px!important;
+    height: auto;
+    font-size: 14px;
+    text-align: left;
+    line-height: inherit;
+    font-weight: 100;
+}
+.top-nav ul li ul li a:hover {
+    background: #076b00;
+    color: #fff;
+}
+.top-nav ul li ul li:hover > a {
+    background: #076b00;
+    color: #fff;
+}
+#header.sticky.affix  .top-nav ul li ul li:hover > a {
+    background: #076b00;
+    color: #fff;
+}
+#header.sticky.affix .top-nav ul li ul li a {
+    padding: 6px 20px!important;
+    color: #fff;
     height: auto;
     text-align: left;
     line-height: inherit;
+}
+#header.sticky.affix .top-nav ul li:hover > a {
+    text-decoration: none;
+    background: rgba(1, 140, 8, 1);
+    color: #fff;
 }
 .top-nav ul li a {
     display: block;
@@ -158,17 +196,18 @@ transition: all 0.3s ease-in-out;
      color: #fff;
 }
 .main-parrent-arrow {
-  font-size: 14px !important;
-  position: absolute;
-  right: 0;
-  top: 13px;
+    font-size: 14px !important;
+    position: absolute;
+    right: 0;
+    width: 100%;
+    bottom: 15px;
+    text-align: center;
 }
-.sub-arrow{
-	float:right;
+.sub-arrow{ 
 	position:absolute;
-	top:12px;
+	top:10px;
 	font-size:14px!important;
-	right:5px;
+	right:10px;
 	}
 
 #header.sticky.affix  .top-nav ul li a:hover {
