@@ -19,6 +19,9 @@ owl.owlCarousel({
         },
         1200:{
             items:3
+        },
+		1920:{
+            items:4
         }
     }
 }); 
