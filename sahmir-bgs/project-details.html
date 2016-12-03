@@ -146,7 +146,7 @@
 								<div class="row">
 									<div class="col-md-12">
 										<div class="innterPage-title">
-											<h1 class="primary-color">Ceramic Tiles</h1> 
+											<h1 class="primary-color">Project title goes here...</h1> 
 										</div>
 									</div>
 								</div>
@@ -155,24 +155,57 @@
 					</div>
 				</section>  
 				<!-- /parallax -->
+
+
  
  
-				<section class="list-section">
+				<section class="padding-50-0">
 					<div class="container">
-						<div class="product-row"> 
-							<div class="col-sm-3 product-item" ng-repeat="product in products"> 
-								<div class="pr-imgholder">	
-									<a class="fancybox-effects-b" data-fancybox-group="gallery" href="{{ product.imgUrlstyle }}" 
-										title="{{product.name}}, Code {{product.pCode}}">
-										<img ng-src="{{ product.imgUrlstyle }}" tittle="{{product.name}}" alt="{{product.name}}">
-										<label for="" class="zoom-icon"><i class="li li-magnifier-add"></i></label>
-									</a>
-									<span class="pr-code">Code: {{product.pCode}}</span>
-									<h3>{{product.name}}</h3>
-								</div>  
-							</div>
-							<div class="clear"></div>
-						</div>
+						 <div class="row">
+							 <div class="col-md-7 details-img">
+								 <div class="details-img-holder" ng-init="imageUrl= 'img/tiles-01.jpg'">
+									 <img ng-src="{{imageUrl}}" alt="">
+								 </div>
+								 <div class="gallery-thumb">
+									 <ul>
+										 <li><img ng-src="img/tiles-01.jpg" ng-click="imageUrl = 'img/tiles-01.jpg'" alt=""></li>
+										 <li><img ng-src="img/tiles-02.jpg" ng-click="imageUrl = 'img/tiles-02.jpg'" alt=""></li>
+										 <li><img ng-src="img/tiles-03.jpg" ng-click="imageUrl = 'img/tiles-03.jpg'" alt=""></li>
+									 </ul>
+								 </div>
+							 </div>
+							 <div class="col-md-5 details-content">
+								 <div class="project-details-content"> 
+									<ul>
+										<li>
+											<span class="project-icon li li-present"></span>
+											<div class="p-line-text">
+												<h6>Work Done</h6>
+												<p>Total Infrastructure</p>
+											</div>
+										</li>
+										<li>
+											<span class="project-icon li li-calendar"></span>
+											<div class="p-line-text">
+												<h6>Duration</h6>
+												<p>3 Week</p>
+											</div>
+										</li>
+										<li>
+											<span class="project-icon li li-trophy"></span>
+											<div class="p-line-text">
+												<h6>Cost</h6>
+												<p>$2500.00</p>
+											</div>
+										</li>
+									</ul> 
+								</div>
+								 <h4>Description:</h4>
+								 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+								 <p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+							 </div>
+						 </div>
 					</div>
 				</section> 
 

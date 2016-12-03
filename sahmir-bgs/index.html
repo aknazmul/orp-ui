@@ -125,7 +125,7 @@
 								<li><a href="#services-section" du-smooth-scroll du-scrollspy offset="68" title="Services">Services</a></li>
 								<li><a href="#project-section" du-smooth-scroll du-scrollspy offset="68" title="Projects">Projects</a></li>
 								<li><a href="#catalogue-section" du-smooth-scroll du-scrollspy offset="68" title="Catalogue">Catalogue</a></li>
-								<li><a href="#contact-section" du-smooth-scroll du-scrollspy offset="68" title="Contact Us">Contact Us</a></li>
+								<li><a href="#contact-form-section" du-smooth-scroll du-scrollspy offset="68" title="Contact Us">Contact Us</a></li>
 							</ul>
 						</nav> 
 					</div>
@@ -185,7 +185,7 @@
 										data-endelementdelay="0.1"
 										data-endspeed="500"
 										data-endeasing="Power4.easeIn">
-										<a href="javascript:void(0)" class="banner-larg-btn" title="Quote">Submit Quote</a>
+										<a href="#contact-form-section" du-smooth-scroll du-scrollspy offset="68" ng-click="contactFormShow = contactFormShow ? false : true" class="banner-larg-btn" title="Quote">Submit Quote</a>
 									</div>
 
 								</li>
@@ -234,7 +234,7 @@
 										data-endelementdelay="0.1"
 										data-endspeed="500"
 										data-endeasing="Power4.easeIn">
-										<a href="javascript:void(0)" class="banner-larg-btn" title="Quote">Submit Quote</a>
+										<a href="#contact-form-section" du-smooth-scroll du-scrollspy offset="68"  class="banner-larg-btn" title="Quote">Submit Quote</a>
 									</div>
 
 								</li>
@@ -484,6 +484,7 @@
 						<h3>Below all of our Catalogue </h3>
 					</div>
 					<div class="container">
+						<div class="row">
 						<div class="col-md-12">
 							<div class="owl-carousel">
 								<div class="project-item"> 
@@ -512,6 +513,15 @@
 								</div> 
 							</div>
 						</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="contact-form-section">
+					<div class="green-transparent padding-50-0">
+					<div class="container">
+						<div class="row" ng-include="'contact-tpl.html'"></div>
+					</div>
 					</div>
 				</section>
 			</div>

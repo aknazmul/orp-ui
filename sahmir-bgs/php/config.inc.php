@@ -7,8 +7,8 @@ $config['smtp_pass'] 			= '';						// password
 $config['smtp_ssl']				= false;					// should remain false
 
 // Who receive all emails?
-$config['send_to']				= 'you@gmail.com';			// destination of all emails sent throught contact form
+$config['send_to']				= 'aknazmul@gmail.com';			// destination of all emails sent throught contact form
 
 // Email Subject
-$config['subject']				= 'Contact Form';			// subject of emails you receive
+$config['phone']				= 'Contact Form';			// subject of emails you receive
 ?>

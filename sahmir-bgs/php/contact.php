@@ -10,9 +10,9 @@
 
 	if($_REQUEST['action'] = 'email_send') {
 
-		$array['name'] 		= isset($_REQUEST['contact_name']) 		? strip_tags(trim($_REQUEST['contact_name'])) 							: '';
+		$array['name'] 		= isset($_REQUEST['contact_name']) 		? strip_tags(trim($_REQUEST['contact_name']))							: '';
 		$array['email']		= isset($_REQUEST['contact_email']) 	? ckmail($_REQUEST['contact_email']) 									: '';
-		$array['subject'] 	= isset($_REQUEST['contact_subject']) 	? strip_tags(trim($_REQUEST['contact_subject'])) 						: '-';
+		$array['phone'] 	= isset($_REQUEST['phone_number']) 	? strip_tags(trim($_REQUEST['phone_number'])) 						: '-';
 		$array['message'] 	= isset($_REQUEST['contact_comment']) 	? (trim(strip_tags($_REQUEST['contact_comment'], '<b><a><strong>')))	: '';
 
 		// Check required fields
@@ -31,7 +31,7 @@
 
 		// BEGIN
 		require('config.inc.php');
-		require('phpmailer/5.1/class.phpmailer.php');
+		// require('phpmailer/5.1/class.phpmailer.php');
 
 		$m = new PHPMailer();
 		$m->IsSMTP();
@@ -43,7 +43,7 @@
 		$m->Password   	= $config['smtp_pass'];		// SMTP account password
 		$m->SingleTo   	= true;
 		$m->CharSet    	= "UTF-8";
-		$m->Subject 	= ($array['subject'] == '-') ? $config['subject'] : $array['subject'];
+		$m->phone 	= ($array['phone'] == '-') ? $config['phone'] : $array['phone'];
 		$m->AltBody 	= 'To view the message, please use an HTML compatible email viewer!';
 
 		$m->AddAddress($config['send_to'], 'Contact Form');
@@ -53,7 +53,7 @@
 			<b>Date:</b> {$date} <br> 
 			<b>Name:</b> {$array['name']}<br>
 			<b>Email:</b> {$array['email']}<br>
-			<b>Subject:</b> {$array['subject']}<br>
+			<b>phone:</b> {$array['phone']}<br>
 			<b>Message:</b> {$array['message']}<br>
 			---------------------------------------------------<br>
 			IP: {$ip}

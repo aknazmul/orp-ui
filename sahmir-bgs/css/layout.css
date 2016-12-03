@@ -296,7 +296,7 @@ div.slider a.btn-default {
 
 	.tparrows.round:before {
 		font-family: 'revicons';
-		color: #fff;
+		color: #018c08;
 		font-style: normal;
 		font-weight: normal;
 		speak: none;
@@ -315,11 +315,17 @@ div.slider a.btn-default {
 
 		cursor: pointer;
 
-		background: rgba(0, 0, 0, 0.5) !important;
-		-webkit-border-radius: 5px;
-		border-radius: 5px;
+		background: rgba(255, 255, 255, 0.7) !important;
+		-webkit-border-radius: 0;
+		border-radius: 0;
 		width: 40px !important;
 		height: 40px !important;
+
+		-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
 
 	}
 	.tparrows:hover {
@@ -335,7 +341,13 @@ div.slider a.btn-default {
 		margin-left: 1px;
 	}
 	.tparrows.round:hover {
-		background: rgba(0, 0, 0, 1) !important;
+		background: rgba(255, 255, 255, 0.9) !important; 
+
+		-webkit-transition: all 0.3s ease-in-out;
+-moz-transition: all 0.3s ease-in-out;
+-ms-transition: all 0.3s ease-in-out;
+-o-transition: all 0.3s ease-in-out;
+transition: all 0.3s ease-in-out;
 	}
 
 
